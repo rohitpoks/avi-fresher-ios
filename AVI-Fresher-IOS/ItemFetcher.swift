@@ -7,12 +7,15 @@
 
 import Foundation
 
+var weeklyLunch: [StevensonFoodItem]? = nil
+var weeklyDinner: [StevensonFoodItem]? = nil
+var weeklyBreakfast: [StevensonFoodItem]? = nil
 enum UnwrappingError: Error {
     case InvalidMealId
     case AviApiError
 }
 
-func getTodaysItems(meal: String) throws {
+func getWeeklyItems(meal: String) throws {
     
     let date = Date()
     // get the current calendar
@@ -43,18 +46,21 @@ func getTodaysItems(meal: String) throws {
                 throw UnwrappingError.AviApiError
             }
             let decodedData = try! decoder.decode([StevensonFoodItem].self, from: data!)
-            print("name is: " + decodedData[0].name)
+            if (meal == "breakfast") {
+                weeklyBreakfast = decodedData
+            }
+            if (meal == "lunch") {
+                weeklyLunch = decodedData
+            }
+            if (meal == "dinner") {
+                weeklyDinner = decodedData
+            }
+            
         } catch {
-            print("error :(")
+            print("Error while deserializing JSON. This is most likely a problem with AVI's API.")
         }
-        
-        print("data is here")
-        print(data?.base64EncodedString())
-        
-        // remainder code here
     })
     
-    
     task.resume()
-    
+
 }

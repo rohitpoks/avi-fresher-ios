@@ -13,10 +13,15 @@ class Get_Request_Tests: XCTestCase {
 
     func testGetRequestForPresentDayLunch() {
         do {
-            try getTodaysItems(meal: "lunch")
+            try getWeeklyItems(meal: "lunch")
             sleep(5)
+            assert(nil != weeklyLunch)
+//            print(weeklyLunch!)
+//            print(filterListByDate(items: weeklyLunch!, date: "2023-11-19"))
+            var temp = (filterListByDate(items: weeklyLunch!, date: "2023-11-19"))
+            print(filterSetByAllergens(items: temp, allergenName: "tree nut"))
         } catch {
-            print("error :(")
+            print("Check logs, error while trying to get weekly lunch items")
         }
     }
 

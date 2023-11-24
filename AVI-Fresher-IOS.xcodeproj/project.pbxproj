@@ -18,6 +18,7 @@
 		26539E012B0FEB010005283B /* ItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26539E002B0FEB010005283B /* ItemFetcher.swift */; };
 		26539E0B2B0FF3C30005283B /* Stevenson_Food_Item_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26539E0A2B0FF3C30005283B /* Stevenson_Food_Item_Unit_Tests.swift */; };
 		26539E0D2B1049FC0005283B /* Get_Request_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26539E0C2B1049FC0005283B /* Get_Request_Tests.swift */; };
+		26539E0F2B1072F70005283B /* FilterFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26539E0E2B1072F70005283B /* FilterFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		26539E002B0FEB010005283B /* ItemFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFetcher.swift; sourceTree = "<group>"; };
 		26539E0A2B0FF3C30005283B /* Stevenson_Food_Item_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stevenson_Food_Item_Unit_Tests.swift; sourceTree = "<group>"; };
 		26539E0C2B1049FC0005283B /* Get_Request_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_Request_Tests.swift; sourceTree = "<group>"; };
+		26539E0E2B1072F70005283B /* FilterFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				263758BE2B0ACF1800B5477A /* Preview Content */,
 				26539DFE2B0FD0E30005283B /* Stevenson_Food_Item.swift */,
 				26539E002B0FEB010005283B /* ItemFetcher.swift */,
+				26539E0E2B1072F70005283B /* FilterFunctions.swift */,
 			);
 			path = "AVI-Fresher-IOS";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26539E0F2B1072F70005283B /* FilterFunctions.swift in Sources */,
 				26539E012B0FEB010005283B /* ItemFetcher.swift in Sources */,
 				263758BB2B0ACF1500B5477A /* ContentView.swift in Sources */,
 				263758B92B0ACF1500B5477A /* AVI_Fresher_IOSApp.swift in Sources */,
